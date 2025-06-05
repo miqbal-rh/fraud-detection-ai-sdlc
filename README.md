@@ -1,53 +1,122 @@
+# Fraud Detection AI SDLC – Backend Intelligence Example
 
-# Insurance Fraud Detection - AI SDLC Example
+This repository demonstrates how to design and develop an AI-powered backend service by replacing traditional rule-based logic with data-driven intelligence. It complements [AI SDLC – Part 3](https://github.com/miqbal-rh/fraud-detection-ai-sdlc), a broader series exploring how software engineering changes when AI becomes the primary engine of backend behavior.
 
-This repository demonstrates how an AI-powered backend service can be built, trained, and deployed to predict fraudulent insurance claims.
+## 🌟 Overview
 
-## 📦 Features
-- ML pipeline with preprocessing and XGBoost training
-- Model evaluation using AUC and classification report
-- SHAP-based model interpretability
-- REST API built with FastAPI
-- Ready for containerized deployment via Docker
+In traditional systems:
+- Developers write **rules**
+- Behavior is governed by **if-else logic**
+- Ambiguity is treated as a **problem**
 
-## 📁 Structure
-```
-fraud-detection-ai-sdlc/
-├── data/
-│   └── claims.csv
-├── notebook/
-│   └── train_model.ipynb
-├── app/
-│   ├── main.py
-│   ├── model_pipeline.pkl
-│   └── requirements.txt
-├── Dockerfile
-└── README.md
-```
+In AI-powered systems:
+- Developers **curate examples**
+- Models **learn behavior** from data
+- Ambiguity becomes a **source of learning**
 
-## 🚀 Quickstart
+This project offers a minimal yet complete AI backend system that:
+- Simulates fraud-labeled insurance claim data
+- Trains a predictive model using structured and unstructured fields
+- Exposes the model through a FastAPI service
 
-### 1. Train the Model
+## 🚀 Try It Locally
+
+### 1. Clone the repo
+
 ```bash
-cd notebook
-jupyter notebook train_model.ipynb
+git clone https://github.com/miqbal-rh/fraud-detection-ai-sdlc.git
+cd fraud-detection-ai-sdlc
 ```
 
-### 2. Serve the Model
+### 2. Create virtual environment and install dependencies
+
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### 3. Train the model
+
+```bash
+python train_model.py
+```
+
+This will:
+- Generate synthetic claim data
+- Train an XGBoost pipeline
+- Serialize it as `model.joblib`
+
+### 4. Run the API
+
 ```bash
 cd app
 uvicorn main:app --reload
 ```
 
-### 3. Test the API
+### 5. Make a prediction
+
 ```bash
-curl -X POST http://localhost:8000/predict \
-     -H "Content-Type: application/json" \
-     -d '{"claim_amount": 23000, "claimant_age": 30, "incident_description": "Car crash with minor injuries"}'
+curl -X POST "http://127.0.0.1:8000/predict" \
+  -H "Content-Type: application/json" \
+  -d '{"claimant_age": 45, "claim_amount": 1200.50, "incident_description": "Theft reported after midnight"}'
 ```
 
-### 4. Docker Support
-```bash
-docker build -t fraud-detector .
-docker run -p 8000:8000 fraud-detector
+## 🧠 What's Inside
+
+### Data Curation (instead of static requirements)
+- `train_model.py` simulates and labels historical claim data.
+
+### Model Training (instead of rule encoding)
+- Combines numerical features and text vectorization (TF-IDF)
+- Uses `XGBoostClassifier` in a pipeline
+
+### Statistical Evaluation (instead of local testing)
+- Prints AUC and precision/recall scores during training
+
+### Optional Interpretability
+- Tools like [SHAP](https://github.com/slundberg/shap) can be added to explain predictions (not included in this repo)
+
+### RESTful Intelligence (instead of hardcoded decision branches)
+- `app/main.py` exposes a single `/predict` endpoint
+
+## 📂 Directory Structure
+
 ```
+fraud-detection-ai-sdlc/
+│
+├── app/
+│   └── main.py               # FastAPI server
+│
+├── notebook/venv/            # Local virtual environment (excluded via .gitignore)
+│
+├── train_model.py            # End-to-end training logic
+├── model.joblib              # Trained model artifact
+├── requirements.txt
+└── README.md
+```
+
+## 📌 Notes
+
+- Do **not** commit `venv/`, `__pycache__/`, or `.ipynb_checkpoints/`
+- `.gitignore` should include:
+  ```
+  venv/
+  __pycache__/
+  *.pyc
+  .ipynb_checkpoints/
+  ```
+
+## 🔄 From Engineering to Orchestration
+
+This project isn't just about fraud detection. It illustrates a deeper shift:
+
+| Traditional Software | AI-Based Development          |
+|----------------------|-------------------------------|
+| Write rules          | Curate labeled data           |
+| Predict deterministically | Learn from patterns        |
+| Test interactively   | Validate statistically         |
+| Debug logic          | Interpret model behavior       |
+| Write conditionals   | Expose model via REST API      |
+
+As a developer, you're not scripting every possibility. You're orchestrating learning—and overseeing models as they evolve.
