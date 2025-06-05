@@ -1,1 +1,29 @@
+# Byte-compiled / optimized / DLL files
 __pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS system files
+.DS_Store
+
+# Virtual environments
+venv/
+env/
+
+# Model files
+*.pkl
+*.joblib
+
+# Logs
+*.log
+
+# VS Code / PyCharm configs
+.vscode/
+.idea/
+
+# OS metadata
+ehthumbs.db
+Thumbs.db
