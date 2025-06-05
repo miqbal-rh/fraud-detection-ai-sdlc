@@ -1,0 +1,101 @@
+claim_id,claim_amount,claimant_age,incident_description,is_fraud
+0001,16592,65,High-speed highway collision,0
+0002,5278,55,Fire damage to garage,0
+0003,38048,45,Car hit by falling tree branch,1
+0004,34098,75,High-speed highway collision,0
+0005,31256,55,Vehicle stolen from parking lot,0
+0006,20289,43,Car hit by falling tree branch,0
+0007,15434,41,Multiple injuries reported after collision,0
+0008,73482,32,Injury at workplace from equipment,0
+0009,13395,26,Minor fender bender,0
+0010,79397,50,Car hit by falling tree branch,1
+0011,57302,49,Minor fender bender,0
+0012,6165,23,Vehicle stolen from parking lot,1
+0013,5905,66,Injury at workplace from equipment,0
+0014,14280,21,Single car accident late at night,0
+0015,30657,73,Fire damage to garage,0
+0016,32495,25,Car hit by falling tree branch,0
+0017,68237,27,Fire damage to garage,0
+0018,5478,58,Slip and fall at grocery store,0
+0019,75563,28,Minor fender bender,1
+0020,28062,68,Minor fender bender,0
+0021,73426,61,Slip and fall at grocery store,0
+0022,56987,45,Single car accident late at night,0
+0023,30893,56,Rear-ended at intersection,0
+0024,60878,22,Multiple injuries reported after collision,0
+0025,79236,42,Car hit by falling tree branch,0
+0026,38463,42,Minor fender bender,1
+0027,2851,56,Multiple injuries reported after collision,0
+0028,22926,47,Minor fender bender,0
+0029,57392,51,Rear-ended at intersection,0
+0030,46597,34,Slip and fall at grocery store,0
+0031,38421,53,Rear-ended at intersection,0
+0032,22379,73,Minor fender bender,0
+0033,30221,18,Slip and fall at grocery store,0
+0034,46118,61,Rear-ended at intersection,0
+0035,15396,64,Single car accident late at night,0
+0036,14156,25,Slip and fall at grocery store,0
+0037,51797,61,Car hit by falling tree branch,1
+0038,14676,74,Minor fender bender,1
+0039,49052,52,Vehicle stolen from parking lot,0
+0040,47082,66,Fire damage to garage,0
+0041,36671,35,Minor fender bender,0
+0042,7695,67,Car hit by falling tree branch,1
+0043,62217,59,High-speed highway collision,1
+0044,72284,39,Multiple injuries reported after collision,1
+0045,18361,25,Multiple injuries reported after collision,0
+0046,51615,36,Fire damage to garage,0
+0047,12328,45,Minor fender bender,1
+0048,74357,28,Fire damage to garage,0
+0049,40427,47,Injury at workplace from equipment,0
+0050,49400,18,Minor fender bender,1
+0051,77674,64,Slip and fall at grocery store,0
+0052,27203,74,Slip and fall at grocery store,0
+0053,11116,64,Injury at workplace from equipment,1
+0054,8006,34,Single car accident late at night,0
+0055,31871,50,Injury at workplace from equipment,0
+0056,39930,66,Injury at workplace from equipment,1
+0057,12458,29,Fire damage to garage,0
+0058,32512,50,Rear-ended at intersection,0
+0059,15238,24,Slip and fall at grocery store,0
+0060,51823,73,Rear-ended at intersection,0
+0061,38434,58,Injury at workplace from equipment,0
+0062,61429,37,Single car accident late at night,0
+0063,49819,71,Slip and fall at grocery store,0
+0064,23319,58,Minor fender bender,0
+0065,50520,50,Minor fender bender,0
+0066,48566,56,Minor fender bender,0
+0067,29460,30,Car hit by falling tree branch,0
+0068,36993,27,Fire damage to garage,1
+0069,11358,41,High-speed highway collision,1
+0070,24431,66,Injury at workplace from equipment,0
+0071,72010,28,High-speed highway collision,0
+0072,34087,52,Vehicle stolen from parking lot,0
+0073,23417,67,Fire damage to garage,0
+0074,62589,51,Minor fender bender,0
+0075,51735,18,Slip and fall at grocery store,0
+0076,37382,56,Fire damage to garage,0
+0077,75000,38,Car hit by falling tree branch,0
+0078,30785,49,Slip and fall at grocery store,0
+0079,44504,19,Rear-ended at intersection,0
+0080,9331,25,Car hit by falling tree branch,0
+0081,32021,41,Rear-ended at intersection,0
+0082,6207,74,Slip and fall at grocery store,1
+0083,43347,71,Minor fender bender,1
+0084,54581,69,High-speed highway collision,0
+0085,37093,37,Injury at workplace from equipment,1
+0086,10675,33,Fire damage to garage,0
+0087,29653,21,Fire damage to garage,0
+0088,76341,33,Minor fender bender,0
+0089,43245,74,Injury at workplace from equipment,0
+0090,29869,54,Rear-ended at intersection,1
+0091,67435,23,High-speed highway collision,0
+0092,53856,23,Injury at workplace from equipment,1
+0093,62142,64,Rear-ended at intersection,1
+0094,20726,49,Injury at workplace from equipment,0
+0095,36718,70,Vehicle stolen from parking lot,0
+0096,20301,22,Fire damage to garage,0
+0097,34325,66,Vehicle stolen from parking lot,0
+0098,75579,52,Injury at workplace from equipment,1
+0099,72644,67,Car hit by falling tree branch,0
+0100,36438,26,Fire damage to garage,0
